@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUMS CoursePacks</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Light theme gradient */
+    .hero {
+      background: linear-gradient(90deg, #0F2027, #2C5364);
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .section {
+      padding: 60px 0;
+    }
+
+    .section:nth-of-type(even) {
+      background: #f4f7fa;
+    }
+
+    .btn-custom {
+      background: #2C5364;
+      color: white;
+      border: none;
+    }
+
+    .btn-custom:hover {
+      background: #1c3d4f;
+      color: white;
+    }
+
+    footer {
+      background: #e9ecef;
+      padding: 30px 0;
+      text-align: center;
+      color: #555;
+    }
+
+    /* Dark Mode */
+    body.dark-mode {
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+
+    body.dark-mode .hero {
+      background: linear-gradient(90deg, #141E30, #243B55);
+    }
+
+    body.dark-mode .section {
+      background-color: #1e1e1e;
+    }
+
+    body.dark-mode .section:nth-of-type(even) {
+      background-color: #2a2a2a;
+    }
+
+    body.dark-mode footer {
+      background-color: #1e1e1e;
+      color: #ccc;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1 class="display-4 fw-bold">LUMS CoursePacks</h1>
+      <p class="lead">Curated, affordable academic resources — in print.</p>
+
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container text-center">
+      <h2>What We Do</h2>
+      <p class="mt-3">We provide curated, high-quality printed coursepacks containing essential study materials, past papers, and instructor-approved content to help LUMS students succeed — while reducing screen fatigue.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container text-center">
+      <h2>Place Your Order</h2>
+      <p class="mt-3">Ready to grab your CoursePack? Click below to access the order form and confirm your request.</p>
+      <a href="#" target="_blank" class="btn btn-custom btn-lg mt-3">Order Now</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p class="mb-0">&copy; 2025 LUMS CoursePacks | Designed for LUMS Students</p>
+        <button onclick="toggleDarkMode()" class="btn btn-light mt-3">Toggle Dark Mode</button>
+    </div>
+  </footer>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+
+</body>
+
+</html>
